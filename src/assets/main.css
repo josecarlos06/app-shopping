@@ -1,0 +1,137 @@
+:root {
+  --purple: rgb(132, 80, 201);
+  --white: #fff;
+  --black: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s;
+}
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+.tareas {
+  margin-top: 2rem;
+}
+.tareas__heading {
+  font-size: 2rem;
+  text-align: center;
+}
+.task__contenedor {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .task__contenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.bton {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  transition: transform 0.4s, background 0.4s;
+}
+.aceptar {
+  background: var(--purple);
+  color: var(--white);
+}
+.cancelar {
+  background: rgb(207, 51, 51);
+  color: var(--white);
+}
+.aceptar:hover {
+  background: rgb(143, 64, 247);
+  transform: scale(1.05);
+}
+.cancelar:hover {
+  background: rgb(255, 53, 53);
+  transform: scale(1.05);
+}
+.form {
+  padding-top: 1rem;
+}
+.campo {
+  display: flex;
+  padding: 0.2rem;
+  border: 1px solid rgba(114, 111, 111, 0.596);
+  background: var(--white);
+}
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+.campo__agrega {
+  background: var(--purple);
+  color: var(--white);
+}
+.campo__agrega:hover {
+  background: rgb(143, 64, 247);
+}
+.prioridad {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+.strong {
+  font-size: 1rem;
+}
+.no-hay {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0rem;
+}
+ul {
+  padding-top: 1rem;
+}
+.item__parrafo {
+  overflow: hidden;
+  width: auto;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem 0.2rem;
+  background: rgb(171, 240, 225);
+  border-left: 4px solid rgb(106, 224, 199);
+  border-radius: 0.2rem;
+}
+.importan {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+.red {
+  background: rgb(231, 150, 150);
+  border-left: 4px solid rgb(233, 112, 112);
+}
+.count {
+  color: gray;
+  opacity: 0.7;
+}
